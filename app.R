@@ -13,20 +13,19 @@ ui <- fluidPage(
   tags$head(tags$style(HTML("
     .shiny-text-output {
                             background-color:#FF0000;
-                            }
+                            } 
                             "))),
   
-  a(h1("Shiny", span("Idiographic Networks", style = "font-weight: 300"), 
+  a(h1(span("Idiographic Networks", style = "font-weight: 300"), 
      style = "font-family: 'Source Sans Pro';
         color: #fff; text-align: center;
-        background-color:#FF0000;
-        padding: 20px"), url = "http://pmdlab.wustl.edu"),
+        background-color:#6A51A3;
+        padding: 20px"), href="http://pmdlab.wustl.edu/beck/projects/networks.html"),
   
   
   br(),
   # Application title
   #titlePanel("Idiographic Personality Networks"),
-  
   # Sidebar with a slider input for number of bins 
   tabsetPanel(
     tabPanel("Plot", 
@@ -72,7 +71,11 @@ ui <- fluidPage(
                ), 
                mainPanel(
                  plotOutput("centrality")
-               )))
+               ))),
+    wellPanel(
+      helpText(   a("Lab Website",     href="http://pmdlab.wustl.edu/beck/projects/networks.html")
+      )
+    )
   )
   
   # Show a plot of the generated distribution

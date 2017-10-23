@@ -5,9 +5,9 @@ account: emoriebeck
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 161754
-bundleId: 1041014
+bundleId: 1041198
 url: https://emoriebeck.shinyapps.io/pairs_graphicalvar/
-when: 1508783175.26489
+when: 1508790183.34277
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: app_data.RData|centralityPlots.RData|idiographic_plots.RData|idioNets.Rmd|old/server.R|old/ui.R
