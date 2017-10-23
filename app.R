@@ -108,8 +108,11 @@ load_url <- function (url, ..., sha1 = NULL) {
   }
   load(temp_file, envir = .GlobalEnv)
 }
-
+library(RColorBrewer)
 edge_colors <- RColorBrewer::brewer.pal(8, "Purples")[c(3,4,6)]
+varnames2 <- c("A_rude", "E_quiet", "C_lazy", 
+               "N_relaxed", "N_depressed", "E_outgoing", 
+               "A_kind", "C_reliable", "N_worried")
 idio_plot_fun <- function(data, subject, wave, type){
   b5_groups <- list(A = c(1,7), E = c(2, 6), C = c(3,8), N = c(4,5,9))
   plot <- 
@@ -160,7 +163,7 @@ centrality_Plot_fun <- function(data, sub, Type){
 # load_url("https://github.com/emoriebeck/PAIRS-Network-Stability/raw/master/centralityPlots.RData")
 load_url("https://github.com/emoriebeck/PAIRS_graphicalVAR/raw/master/app_data.RData")
 
-library(graphicalVAR)
+library(qgraph)
 library(tidyverse)
 library(gridExtra)
 
