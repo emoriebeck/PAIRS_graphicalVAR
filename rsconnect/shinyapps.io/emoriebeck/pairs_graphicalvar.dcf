@@ -1,0 +1,11 @@
+name: pairs_graphicalvar
+title: PAIRS_graphicalVAR
+account: emoriebeck
+server: shinyapps.io
+appId: 161754
+bundleId: 767780
+url: https://emoriebeck.shinyapps.io/pairs_graphicalvar/
+when: 1490738304.00966
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: centralityPlots.RData|idiographic_plots.RData

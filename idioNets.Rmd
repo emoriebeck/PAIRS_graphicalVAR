@@ -1,0 +1,20 @@
+---
+title: "Untitled"
+output: 
+  flexdashboard::flex_dashboard:
+    runtime: shiny
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+
+### Chart A
+
+```{r}
+# include the module
+source("app.R")
+pairsUI()
+callModule(pairs.server, "phones")
+```
